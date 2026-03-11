@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="mr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>प्रमाणपत्र (दाखला) सत्यापन</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #06263f;
+      --card:#fff;
+      --accent:#0b63b6;
+      --muted:#6b7280;
+      --shadow: 0 10px 30px rgba(2,6,23,0.45);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: 'Noto Sans Devanagari', system-ui, sans-serif; background: linear-gradient(180deg, #04263a 0%, #032236 100%); color:#111;
+      display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .container{width:100%; max-width:420px;}
+    .card{
+      background:var(--card); border-radius:16px; padding:22px; box-shadow:var(--shadow);
+    }
+    .logo{
+      display:flex; align-items:center; justify-content:center; margin-bottom:6px;
+    }
+    .logo img{height:48px}
+    h1{font-size:20px; color:var(--accent); text-align:center; margin:8px 0 18px; display:flex; align-items:center; justify-content:center; gap:10px}
+    .hicon{width:36px;height:36px; background:linear-gradient(90deg,#e6f2ff,#fff); border-radius:8px; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px rgba(11,99,182,0.12)}
+    .hicon svg{width:22px;height:22px;fill:var(--accent)}
+    .meta{font-size:14px; color:var(--muted); text-align:center; margin-bottom:14px}
+    .info{
+      border-radius:12px; background:#fbfdff; padding:14px; border:1px solid #f1f5f9;
+    }
+    .row{padding:12px 6px; border-bottom:1px solid #eef2f6; display:flex; flex-direction:column}
+    .row:last-child{border-bottom:none}
+    .label{font-size:13px; color:#394151;}
+    .value{font-weight:700; margin-top:6px; color:#0b2c4a}
+    .note{margin-top:14px; font-size:13px; color:#6b7280}
+    .back-wrap{display:flex; margin-top:18px}
+    .btn{
+      padding:10px 14px; border-radius:8px; border:none; background:var(--accent); color:white; cursor:pointer; font-weight:600;
+    }
+    /* small footer text outside card */
+    .card-note{margin-top:12px; font-size:13px; color:#374151}
+    @media (max-width:420px){
+      .container{padding:0 6px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">
+        <!-- Placeholder for logo similar to image -->
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='48'><rect rx='6' width='100%' height='100%' fill='%23ffffff' /><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Noto Sans Devanagari, sans-serif' font-size='16' fill='%230b63b6'>आपले सरकार</text></svg>" alt="logo">
+      </div><h1>
+    <span class="hicon">
+      <!-- certificate icon -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a4 4 0 0 0-4 4v1H6.5A2.5 2.5 0 0 0 4 9.5v8A2.5 2.5 0 0 0 6.5 20H18a2 2 0 0 0 2-2V8a4 4 0 0 0-4-4H14V6a4 4 0 0 0-2 0V6H12z"/></svg>
+    </span>
+    प्रमाणपत्र (दाखला) सत्यापन
+  </h1>
+
+  <div class="meta">ग्रामपंचायत - शेक , तालुका - जिंतूर , जिल्हा - परभणी</div>
+
+  <div class="info">
+    <div class="row">
+      <div class="label">दाखला क्रमांक</div>
+      <div class="value">१४४८२७</div>
+    </div>
+    <div class="row">
+      <div class="label">दाखल्याचे नाव</div>
+      <div class="value">विवाह नोंद दाखला</div>
+    </div>
+    <div class="row">
+      <div class="label">दाखला मागणी केलेल्या व्यक्तीचे नाव</div>
+      <div class="value">सय्यद सोहेल सय्यद अलिम</div>
+    </div>
+    <div class="row">
+      <div class="label">ग्रामसेवकांचे नाव</div>
+      <div class="value">RAJENDRA MADHUKAR PARVE</div>
+    </div>
+    <div class="row">
+      <div class="label">दाखला वितरण दिनांक</div>
+      <div class="value">०२-०७-२०२५</div>
+    </div>
+  </div>
+
+  <div class="note">* वरील दाखला ग्रामपंचायत शेक , तालुका - जिंतूर , जिल्हा - परभणी यांचे वतीने वितरीत केलेला आहे.</div>
+
+  <div class="back-wrap">
+    <button class="btn" onclick="history.back()">Back</button>
+  </div>
+
+</div>
+
+  </div>
+</body>
+</html>
