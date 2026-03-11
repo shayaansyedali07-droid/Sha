@@ -1,104 +1,154 @@
-<!doctype html>
-
-<html lang="mr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>प्रमाणपत्र (दाखला) सत्यापन</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #06263f;
-      --card:#fff;
-      --accent:#0b63b6;
-      --muted:#6b7280;
-      --shadow: 0 10px 30px rgba(2,6,23,0.45);
-      --radius:12px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;}
-    body{
-      margin:0; font-family: 'Noto Sans Devanagari', system-ui, sans-serif; background: linear-gradient(180deg, #04263a 0%, #032236 100%); color:#111;
-      display:flex; align-items:center; justify-content:center; padding:24px;
-    }
-    .container{width:100%; max-width:420px;}
-    .card{
-      background:var(--card); border-radius:16px; padding:22px; box-shadow:var(--shadow);
-    }
-    .logo{
-      display:flex; align-items:center; justify-content:center; margin-bottom:6px;
-    }
-    .logo img{height:48px}
-    h1{font-size:20px; color:var(--accent); text-align:center; margin:8px 0 18px; display:flex; align-items:center; justify-content:center; gap:10px}
-    .hicon{width:36px;height:36px; background:linear-gradient(90deg,#e6f2ff,#fff); border-radius:8px; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px rgba(11,99,182,0.12)}
-    .hicon svg{width:22px;height:22px;fill:var(--accent)}
-    .meta{font-size:14px; color:var(--muted); text-align:center; margin-bottom:14px}
-    .info{
-      border-radius:12px; background:#fbfdff; padding:14px; border:1px solid #f1f5f9;
-    }
-    .row{padding:12px 6px; border-bottom:1px solid #eef2f6; display:flex; flex-direction:column}
-    .row:last-child{border-bottom:none}
-    .label{font-size:13px; color:#394151;}
-    .value{font-weight:700; margin-top:6px; color:#0b2c4a}
-    .note{margin-top:14px; font-size:13px; color:#6b7280}
-    .back-wrap{display:flex; margin-top:18px}
-    .btn{
-      padding:10px 14px; border-radius:8px; border:none; background:var(--accent); color:white; cursor:pointer; font-weight:600;
-    }
-    /* small footer text outside card */
-    .card-note{margin-top:12px; font-size:13px; color:#374151}
-    @media (max-width:420px){
-      .container{padding:0 6px}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TASTY FoodExpress | Premium Dining</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="logo">
-        <!-- Placeholder for logo similar to image -->
-        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='48'><rect rx='6' width='100%' height='100%' fill='%23ffffff' /><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Noto Sans Devanagari, sans-serif' font-size='16' fill='%230b63b6'>आपले सरकार</text></svg>" alt="logo">
-      </div><h1>
-    <span class="hicon">
-      <!-- certificate icon -->
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a4 4 0 0 0-4 4v1H6.5A2.5 2.5 0 0 0 4 9.5v8A2.5 2.5 0 0 0 6.5 20H18a2 2 0 0 0 2-2V8a4 4 0 0 0-4-4H14V6a4 4 0 0 0-2 0V6H12z"/></svg>
-    </span>
-    प्रमाणपत्र (दाखला) सत्यापन
-  </h1>
 
-  <div class="meta">ग्रामपंचायत - शेक , तालुका - जिंतूर , जिल्हा - परभणी</div>
-
-  <div class="info">
-    <div class="row">
-      <div class="label">दाखला क्रमांक</div>
-      <div class="value">१४४८२७</div>
+<!-- INTRO OVERLAY -->
+<div id="intro-overlay" aria-hidden="true">
+    <div class="intro-glass">
+        <div class="logo-animation">
+            <span class="main-emoji">🍔</span>
+            <div class="ring-pulse"></div>
+        </div>
+        <h1 class="intro-text">TASTY <span>FoodExpress</span></h1>
+        <div class="load-bar"><div class="fill"></div></div>
     </div>
-    <div class="row">
-      <div class="label">दाखल्याचे नाव</div>
-      <div class="value">विवाह नोंद दाखला</div>
-    </div>
-    <div class="row">
-      <div class="label">दाखला मागणी केलेल्या व्यक्तीचे नाव</div>
-      <div class="value">सय्यद सोहेल सय्यद अलिम</div>
-    </div>
-    <div class="row">
-      <div class="label">ग्रामसेवकांचे नाव</div>
-      <div class="value">RAJENDRA MADHUKAR PARVE</div>
-    </div>
-    <div class="row">
-      <div class="label">दाखला वितरण दिनांक</div>
-      <div class="value">०२-०७-२०२५</div>
-    </div>
-  </div>
-
-  <div class="note">* वरील दाखला ग्रामपंचायत शेक , तालुका - जिंतूर , जिल्हा - परभणी यांचे वतीने वितरीत केलेला आहे.</div>
-
-  <div class="back-wrap">
-    <button class="btn" onclick="history.back()">Back</button>
-  </div>
-
 </div>
 
-  </div>
+<header>
+    <div class="logo">
+        <span class="emoji">🍔</span>
+        <div>
+            <h1 class="brand-tasty">TASTY</h1>
+            <div class="brand-express">FoodExpress</div>
+        </div>
+    </div>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+        <a href="#history">Orders</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION WITH OFFER -->
+<section class="hero">
+    <p class="hero-tagline">FASTEST DELIVERY IN TOWN</p>
+    <h2 class="hero-title">
+        The Art of <br> 
+        <span class="highlight">Premium</span> Dining
+    </h2>
+    <p class="hero-description">
+        Tasty Food Express aap tak pohochata hai taaza aur lazeez khana, wo bhi express raftar mein..
+    </p>
+
+    <button type="button" class="explore-btn"
+        onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+        Explore Our Menu
+    </button>
+    
+    <!-- OFFER COUNTDOWN -->
+    <div class="offer-timer">
+        <p>🎉 Special Offer Ends In: <span id="countdown">00:00:00</span></p>
+    </div>
+
+    <div class="hero-stats">
+        <div class="stat-box">
+            <h3 class="stat-value">4.9</h3>
+            <p class="stat-label">Avg Rating</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="stat-value" id="hero-order-count">0</h3>
+            <p class="stat-label">Orders Done</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="stat-value">25min</h3>
+            <p class="stat-label">Fast Delivery</p>
+        </div>
+    </div>
+</section>
+
+<div class="main-container">
+    <section class="section-box" id="menu">
+        <h2 class="menu-header"><span>|</span> Special Menu</h2>
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                onkeyup="searchFood()" 
+                placeholder="Search your favorite food..."
+                autocomplete="off"
+            >
+        </div>
+        <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <div class="flex-layout">
+        <section class="section-box" id="cart">
+            <h2 class="menu-header"><span>|</span> Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="total-area">
+                <p>Grand Total</p>
+                <h3 id="total">₹0</h3>
+            </div>
+        </section>
+
+        <section class="section-box" id="history">
+            <h2 class="menu-header"><span>|</span> Order History</h2>
+            <div id="order-history"></div>
+        </section>
+    </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="modal" id="paymentModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+        <h2 class="modal-title">Secure Checkout</h2>
+
+        <input type="text" id="fullName" placeholder="Full Name" autocomplete="name">
+        <input type="text" id="address" placeholder="Delivery Address" autocomplete="street-address">
+
+        <input 
+            type="text" 
+            placeholder="16 Digit Card Number"
+            inputmode="numeric"
+            maxlength="16"
+            autocomplete="cc-number"
+        >
+
+        <div class="modal-row">
+            <input 
+                type="text" 
+                placeholder="MM/YY"
+                inputmode="numeric"
+                maxlength="5"
+                autocomplete="cc-exp"
+            >
+            <input 
+                type="password" 
+                placeholder="CVV"
+                inputmode="numeric"
+                maxlength="3"
+                autocomplete="cc-csc"
+            >
+        </div>
+
+        <button type="button" class="btn-pay" onclick="confirmPayment()">
+            Pay & Confirm Order
+        </button>
+
+        <button type="button" class="btn-cancel" onclick="closeModal()">
+            Cancel Order
+        </button>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
